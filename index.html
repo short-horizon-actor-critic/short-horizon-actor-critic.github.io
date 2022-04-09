@@ -134,14 +134,12 @@
               <div class="modal-body">
 <pre>
 <small>
-  @inproceedings{
-    xu2022accelerated,
+  @inproceedings{xu2021accelerated,
     title={Accelerated Policy Learning with Parallel Differentiable Simulation},
-    author={Jie Xu and Miles Macklin and Viktor Makoviychuk and Yashraj Narang and Animesh Garg and Fabio Ramos and Wojciech Matusik},
+    author={Xu, Jie and Makoviychuk, Viktor and Narang, Yashraj and Ramos, Fabio and Matusik, Wojciech and Garg, Animesh and Macklin, Miles},
     booktitle={International Conference on Learning Representations},
-    year={2022},
-    url={https://openreview.net/forum?id=ZSKRQMvttc}
-    }
+    year={2021}
+  }
 </small>
 </pre>
               </div>
@@ -163,6 +161,157 @@
         </video>
       </div>
     </div>
+  </div><br><br><br>
+
+  <!-- More Results -->
+  <div class="container">
+    <h4 id="More Results" style="padding-top: 30px; margin-top: -40px;">More Results</h4><hr>
+    <br>
+    <h5> Training Speed Comparisons with Baseline Algorithms </h5>
+    <br>
+    <figure class="figure">
+      <img src="training_comparison.jpg" class="figure-img img-fluid rounded">
+    </figure>
+    <br>
+    <h5> Evaluation Problem 1: CartPole Swing Up + Balance </h5> <br>
+    <div class="row">
+      <figure class="figure col-lg-4">
+        <img src="videos/cartpole_0.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 0</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/cartpole_1.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 50</figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(36 seconds of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/cartpole_2.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 100 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(72 seconds of training)</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <figure class="figure col-lg-4">
+        <img src="videos/cartpole_3.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 200 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(2.5 minutes of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/cartpole_4.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 500 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(6 minutes of training)</figcaption>
+      </figure>
+      <div class="col-lg-2">
+      </div>
+    </div>
+
+    <br>
+    <h5> Evaluation Problem 2: Ant </h5> <br>
+    <div class="row">
+      <figure class="figure col-lg-4">
+        <img src="videos/ant_0.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 0</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/ant_1.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 200</figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(4 minutes of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/ant_2.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 400 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(8 minutes of training)</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <figure class="figure col-lg-4">
+        <img src="videos/ant_3.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 800 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(16 minutes of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/ant_4.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 2000 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(40 minutes of training)</figcaption>
+      </figure>
+      <div class="col-lg-2">
+      </div>
+    </div>
+
+  <br>
+  <h5> Evaluation Problem 3: Humanoid </h5> <br>
+    <div class="row">
+      <figure class="figure col-lg-4">
+        <img src="videos/humanoid_0.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 0</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/humanoid_1.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 200</figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(10.5 minutes of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/humanoid_2.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 400 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(21 minutes of training)</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <figure class="figure col-lg-4">
+        <img src="videos/humanoid_3.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 800 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(42 minutes of training)</figcaption>
+      </figure>
+      <figure class="figure col-lg-4">
+        <img src="videos/humanoid_4.gif" class="figure-img img-fluid rounded">
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 2000 </figcaption>
+        <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(105 minutes of training)</figcaption>
+      </figure>
+      <div class="col-lg-2">
+      </div>
+    </div>
+
+    <br>
+    <h5> Evaluation Problem 4: Humanoid MTU </h5> <br>
+      <div class="row">
+        <figure class="figure col-lg-4">
+          <img src="videos/snu_0.gif" class="figure-img img-fluid rounded">
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 0</figcaption>
+        </figure>
+        <figure class="figure col-lg-4">
+          <img src="videos/snu_1.gif" class="figure-img img-fluid rounded">
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 200</figcaption>
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(8.5 minutes of training)</figcaption>
+        </figure>
+        <figure class="figure col-lg-4">
+          <img src="videos/snu_2.gif" class="figure-img img-fluid rounded">
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 400 </figcaption>
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(17 minutes of training)</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <figure class="figure col-lg-4">
+          <img src="videos/snu_3.gif" class="figure-img img-fluid rounded">
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 800 </figcaption>
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(34 minutes of training)</figcaption>
+        </figure>
+        <figure class="figure col-lg-4">
+          <img src="videos/snu_4.gif" class="figure-img img-fluid rounded">
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">Episode 2000 </figcaption>
+          <figcaption style="font-family:'Times New Roman';font-size:20px" class="figure-caption text-center">(85 minutes of training)</figcaption>
+        </figure>
+        <div class="col-lg-2">
+        </div>
+      </div>
+
   </div><br><br><br>
 
   <!-- Related Papers -->
